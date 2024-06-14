@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startTestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar teste"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_centerInParent="true" />
+
+    <com.example.displaytest.TestDisplayView
+        android:id="@+id/testDisplayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/passButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passou"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_dark"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>
+
